@@ -1,0 +1,260 @@
+
+
+@keyframes happy-turtle-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+.happy-turtle-hover
+{
+  border-radius: 30px;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  background: #fff;
+  color: blueviolet;
+  cursor: pointer;
+  border-radius: 4rem;
+  border: 10px;
+  border-bottom: 2px solid blueviolet;
+  border-right: 2px solid blueviolet;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  transition-duration: .5s;
+  transition-property: border-top, border-left, border-bottom, border-right,
+    box-shadow;
+}
+
+.happy-turtle-hover:hover {
+  animation: happy-turtle-bounce 0.6s ease-in-out;
+
+  border-top: 2px solid blueviolet;
+  border-left: 2px solid blueviolet;
+  border-bottom: 2px solid rgb(136, 34, 224);
+  border-right: 2px solid rgb(136, 34, 224);
+  box-shadow: rgba(168, 46, 224, 0.4) 5px 5px, rgba(134, 46, 224, 0.4) 10px 10px,
+    rgba(118, 45, 224, 0.4) 15px 15px;
+}
+.happy-turtle-hover:focus
+{
+  background-color: black;
+}
+
+
+
+.wallet
+{
+  position: relative;
+  padding: 10px 22px;
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+  border-radius: 50px;
+  border-top: 2px solid blueviolet;
+  border-left: 2px solid blueviolet;
+  cursor: pointer;
+  background-color: #7d2ae8;
+  transition: all 0.2s ease;
+
+}
+
+.wallet:active
+{
+  transform: scale(0.96);
+}
+
+.wallet:before,
+.wallet:after {
+  position: absolute;
+  content: "";
+  width: 150%;
+  left: 50%;
+  height: 100%;
+  transform: translateX(-50%);
+  z-index: -1000;
+  background-repeat: no-repeat;
+}
+
+.wallet:hover
+{
+  transform: scale(1.12,1.1);
+}
+
+
+.wallet:hover:before {
+  top: -70%;
+  background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, transparent 20%, #7d2ae8 20%, transparent 30%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+    10% 10%, 18% 18%;
+  background-position: 50% 120%;
+  animation: greentopBubbles 0.6s ease;
+}
+
+@keyframes greentopBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+      40% 90%, 55% 90%, 70% 90%;
+  }
+
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+      50% 50%, 65% 20%, 90% 30%;
+  }
+
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+      50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+.wallet:hover::after {
+  bottom: -70%;
+  background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+  background-position: 50% 0%;
+  animation: greenbottomBubbles 0.6s ease;
+}
+
+@keyframes greenbottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+      70% -10%, 70% 0%;
+  }
+
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+      105% 0%;
+  }
+
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+      110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+
+/* Getting Started Button */
+.get-started-button {
+  padding: 15px 25px;
+  border: unset;
+  border-radius: 30px;
+  color: #000080;
+  z-index: 1;
+  background: linear-gradient(50deg,#da8ee7, #ca5edc);
+  position: relative;
+  font-weight: 1000;
+  font-size: 17px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms;
+  overflow: hidden;
+  border-top: 2px solid rgb(136, 34, 224);
+  border-left: 2px solid rgb(136, 34, 224);
+  border-bottom: 2px solid rgb(229, 225, 233);
+  border-right: 2px solid rgb(229, 225, 233);
+ }
+ 
+ .get-started-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color:#a000c8;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 500ms;
+ }
+ 
+ .get-started-button:hover {
+  color: wheat;
+  box-shadow: rgba(165, 49, 219, 0.611)-5px -5px , 
+  rgba(139, 52, 226, 0.484) -10px -10px,
+  rgba(140, 76, 235, 0.165) -15px -15px; 
+  border-bottom: 2px solid rgb(136, 34, 224);
+  border-right: 2px solid rgb(136, 34, 224);
+  
+ }
+ 
+   
+ .get-started-button:hover::before {
+  width: 100%;
+  background: linear-gradient(50deg,#8a00c2, 
+ #7600bc);
+ }
+
+
+ /* search bar */
+
+ /* From Uiverse.io by OnlyCodeChannel */ 
+/* .searchBox {
+  display: flex;
+  max-width: 230px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  background: #240046;
+  border-radius: 50px;
+  position: relative;
+}
+
+.searchBox {
+  color: white;
+  position: absolute;
+  right: 8px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--gradient-2, linear-gradient(90deg, #7b2cbf 0%, #3c096c  100%));
+  border: 0;
+  display: inline-block;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+/*hover effect*/
+/* .searchBox-button:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 10px 20px;
+  transform: translateY(-3px);
+}
+button pressing effect*/
+/* .searchBox-button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.searchInput { */
+  /* border: none;
+  background: none;
+  outline: none;
+  color: white;
+  font-size: 15px;
+  padding: 24px 116px 24px 20px;
+}
+
+.searchBox-input::placeholder{
+color : gray;
+} */ 
+
