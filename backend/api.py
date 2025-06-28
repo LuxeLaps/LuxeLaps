@@ -17,7 +17,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-genai.configure(api_key="AIzaSyC0pBsy8E7sqXnkBF9yuITseBdlFNJGtS0")
+genai.configure(api_key="AIzaSyC0pBsy8E7sqXnkBF9yuITseBdlFNJGtS0")  # Replace with your actual Gemini API key
 model = genai.GenerativeModel("gemini-2.0-flash-preview-image-generation")
 
 class RecommendRequest(BaseModel):

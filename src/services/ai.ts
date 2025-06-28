@@ -62,7 +62,7 @@ export async function generateItemImage(prompt: string): Promise<string> {
 
 // Generate outfit recommendations (logic remains in frontend)
 export async function getOutfitRecommendations({ occasion, weather }: { occasion: string; weather: string; }): Promise<OutfitRecommendation> {
-  const response = await fetch('http://localhost:8000/recommend', {
+  const response = await fetch('https://2lgs1jrd-8000.inc1.devtunnels.ms/recommend', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ occasion, weather })
