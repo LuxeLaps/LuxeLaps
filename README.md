@@ -17,7 +17,7 @@ Backend was made/linked by Satyam Yadav with help of  Durga Ojha.
 and frontend was refined by Harish.
 
 Email of owners:
-1. Satyam Yadav - raostyam53@gmail.com;
+1. Satyam Yadav - raosatyam53@gmail.com;
 2. Durga Ojha - d88177600@gmail.com;
 3. Harish - cyberzff123@gmail.com;
 
